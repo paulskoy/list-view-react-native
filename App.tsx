@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StatusBar } from "react-native";
+
+import HomepageStack from "./src/routes/stack/HomepageStack";
 
 export default function App() {
+  // WHEN U COMEBACK START STYLING THE HOMEPAGE
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{ flex: 1 }}>
+      <StatusBar barStyle="default" />
+
+      <HomepageStack />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
